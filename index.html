@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="km" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UNIVERSE HUOKAING THARA - Movie Home / ទំព័រដើមភាពយន្ត</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kantumruy+Pro:wght@300;400;600;700&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="universe_huokaingthara.jpg">
+</head>
+<body>
+
+    <!-- Holographic Scanline Overlay -->
+    <div id="holo-overlay"></div>
+
+    <!-- Header & Navigation -->
+    <header class="site-header">
+        <div class="logo-container">
+            <i class="fa-solid fa-film spin-icon"></i>
+            <h1>UNIVERSE HUOKAING THARA <span class="sub-title">ទំព័រដើមភាពយន្ត / Movie Home</span></h1>
+        </div>
+        <div class="controls">
+            <button id="langToggleBtn" class="control-btn">🇰🇭 / EN</button>
+            <button id="themeToggleBtn" class="control-btn"><i class="fa-solid fa-moon"></i></button>
+        </div>
+    </header>
+
+    <!-- Main Container -->
+    <main class="main-container">
+
+        <!-- Hero Section -->
+        <section class="hero-card">
+            <div class="badge">🎬 UNIVERSE HUOKAING THARA • CINEMA & FILM PORTAL</div>
+            <h2 class="km">ពិភពភាពយន្ត ការចាក់បញ្ចាំង និងស្នាដៃផលិតកម្ម</h2>
+            <h2 class="en">Cinema Screenings, Feature Films & Production Hub</h2>
+            <p class="km">
+                ស្វាគមន៍មកកាន់ទំព័រដើមភាពយន្តរបស់ <strong>UNIVERSE HUOKAING THARA Group</strong> ដែលផ្តល់ជូនព័ត៌មានភាពយន្ត ការចាក់បញ្ចាំងពិសេស និងស្នាដៃថ្មីៗ ដោយមានការរួមចំណែកពីលោក <strong>ជອນ រតនៈ</strong> និងអភិវឌ្ឍប្រព័ន្ធដោយក្រុមអ្នកសរសេរកូដជំនាញ។
+            </p>
+            <p class="en">
+                Welcome to the cinema home of <strong>UNIVERSE HUOKAING THARA Group</strong> featuring film showcases, screening highlights, and productions—with contributions from <strong>Mr. Chorn Rothanak</strong> and engineering by our elite programmers and developers.
+            </p>
+
+            <!-- Search & Filter Bar -->
+            <div class="search-filter-bar">
+                <div class="search-box">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" id="movieSearch" placeholder="ស្វែងរកភាពយន្ត... / Search movies, screenings, genres, titles...">
+                </div>
+                <div class="filter-pills">
+                    <button class="pill-btn active" data-filter="all">All / ទាំងអស់</button>
+                    <button class="pill-btn" data-filter="romance">Romance & Drama / មនោសញ្ចេតនា</button>
+                    <button class="pill-btn" data-filter="thriller">Mystery & Horror / អាថ៌កំបាំង</button>
+                    <button class="pill-btn" data-filter="comedy">Comedy / កំប្លែង</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Movies Grid -->
+        <section class="movies-section">
+            <h3 class="section-heading">
+                <i class="fa-solid fa-ticket"></i>
+                <span class="km">ភាពយន្ត និងកម្មវិធីចាក់បញ្ចាំង (Featured Films & Screenings)</span>
+                <span class="en">Featured Films & Screenings</span>
+            </h3>
+
+            <div class="movies-grid" id="moviesGrid">
+
+                <!-- Movie 1 -->
+                <article class="movie-card featured" data-cat="romance">
+                    <div class="card-top">
+                        <span class="movie-code">FILM 01 • CINEMA</span>
+                        <span class="status-pill">NOW SHOWING / SPOTLIGHT</span>
+                    </div>
+                    <h4 class="km">ឆ្កួតស្នេហ៍ (Chkuot Sne)</h4>
+                    <h4 class="en">Chkuot Sne — Cinema & Screening Feature</h4>
+                    <p class="km">ភាពយន្តមនោសញ្ចេតនា និងកំប្លែងដែលទាក់ទាញទស្សនិកជននៅរោងភាពយន្ត និងកម្មវិធីផ្សព្វផ្សាយពិសេស។</p>
+                    <p class="en">A dramatic and comedic cinema release highlighted across theatrical screenings and promotional spotlights.</p>
+                    <div class="card-footer">
+                        <span class="meta-txt"><i class="fa-solid fa-clapperboard"></i> Cinema & Digital</span>
+                        <button class="inspect-btn"
+                            data-title="ឆ្កួតស្នេហ៍ (Chkuot Sne)"
+                            data-genre="Romance, Drama & Comedy"
+                            data-format="Theatrical Screening & Digital Showcase"
+                            data-synopsis="Featured across promotional screening campaigns under UNIVERSE HUOKAING THARA with bilingual audience highlights.">
+                            <span class="km">មើលព័ត៌មាន</span> / <span class="en">Movie Info</span>
+                        </button>
+                    </div>
+                </article>
+
+                <!-- Movie 2 -->
+                <article class="movie-card" data-cat="thriller">
+                    <div class="card-top">
+                        <span class="movie-code">FILM 02 • SUSPENSE</span>
+                        <span class="status-pill">IN PRODUCTION</span>
+                    </div>
+                    <h4 class="km">ស្រមោលរាត្រី និងអាថ៌កំបាំង</h4>
+                    <h4 class="en">Midnight Shadow & Mystery</h4>
+                    <p class="km">ភាពយន្តបែបអាថ៌កំបាំង និងរន្ធត់ព្រឺព្រួច ដែលផ្តោតលើបរិយាកាស និងសាច់រឿងគួរឱ្យចាប់អារម្មណ៍។</p>
+                    <p class="en">A suspenseful mystery film concept emphasizing tense atmosphere, twists, and narrative pacing.</p>
+                    <div class="card-footer">
+                        <span class="meta-txt"><i class="fa-solid fa-ghost"></i> Mystery & Thriller</span>
+                        <button class="inspect-btn"
+                            data-title="ស្រមោលរាត្រី និងអាថ៌កំបាំង / Midnight Shadow"
+                            data-genre="Mystery & Thriller"
+                            data-format="Narrative Film Production"
+                            data-synopsis="Developed within the UNIVERSE HUOKAING THARA creative catalog with support from our storytelling and production team.">
+                            <span class="km">មើលព័ត៌មាន</span> / <span class="en">Movie Info</span>
+                        </button>
+                    </div>
+                </article>
+
+                <!-- Movie 3 -->
+                <article class="movie-card" data-cat="comedy">
+                    <div class="card-top">
+                        <span class="movie-code">FILM 03 • COMEDY</span>
+                        <span class="status-pill">UPCOMING</span>
+                    </div>
+                    <h4 class="km">សំណើចមិត្តភាព និងដំណើរកម្សាន្ត</h4>
+                    <h4 class="en">Laughter & Roadtrip Crew</h4>
+                    <p class="km">ភាពយន្តកំប្លែងសប្បាយៗ អំពីដំណើរកម្សាន្ត មិត្តភាព និងស្ថានការណ៍គួរឱ្យអស់សំណើច។</p>
+                    <p class="en">An upbeat comedy film centering on friendship, roadtrip mishaps, and crowd-pleasing humor.</p>
+                    <div class="card-footer">
+                        <span class="meta-txt"><i class="fa-solid fa-masks-theater"></i> Comedy Feature</span>
+                        <button class="inspect-btn"
+                            data-title="សំណើចមិត្តភាព និងដំណើរកម្សាន្ត / Laughter & Roadtrip Crew"
+                            data-genre="Comedy & Adventure"
+                            data-format="Feature & Series Release"
+                            data-synopsis="Crafted for broad entertainment appeal with energetic ensemble moments under UNIVERSE HUOKAING THARA.">
+                            <span class="km">មើលព័ត៌មាន</span> / <span class="en">Movie Info</span>
+                        </button>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Movie Details Modal -->
+    <div id="movieModal" class="modal-backdrop hidden">
+        <div class="modal-card">
+            <span class="modal-badge">FILM DOSSIER</span>
+            <h3 id="modalMovieTitle">Movie Title</h3>
+            <div class="modal-body">
+                <p><strong>Genre:</strong> <span id="modalMovieGenre" class="accent-txt"></span></p>
+                <p><strong>Release Format:</strong> <span id="modalMovieFormat"></span></p>
+                <p id="modalMovieSynopsis" class="modal-synopsis"></p>
+            </div>
+            <button id="closeMovieModal" class="control-btn full-width">
+                <span class="km">បិទផ្ទាំង</span> / <span class="en">Close</span>
+            </button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <p>&copy; 2026 UNIVERSE HUOKAING THARA Group. All Rights Reserved. / រក្សាសិទ្ធិគ្រប់យ៉ាង។</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
